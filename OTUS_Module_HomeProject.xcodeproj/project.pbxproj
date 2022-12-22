@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1091D325870193BD86C264AF /* Pods_OTUS_Module_HomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318A5B335E56B36802F88D1 /* Pods_OTUS_Module_HomeProject.framework */; };
 		401084212954BBEA00D1EC5A /* OTUS_Module_HomeProject.docc in Sources */ = {isa = PBXBuildFile; fileRef = 401084202954BBEA00D1EC5A /* OTUS_Module_HomeProject.docc */; };
 		401084222954BBEA00D1EC5A /* OTUS_Module_HomeProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4010841F2954BBEA00D1EC5A /* OTUS_Module_HomeProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4077A2592954C59400ED4967 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077A2582954C59400ED4967 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3612FFC25CDD631E236D3BB0 /* Pods-OTUS_Module_HomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTUS_Module_HomeProject.debug.xcconfig"; path = "Target Support Files/Pods-OTUS_Module_HomeProject/Pods-OTUS_Module_HomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4010841C2954BBEA00D1EC5A /* OTUS_Module_HomeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTUS_Module_HomeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4010841F2954BBEA00D1EC5A /* OTUS_Module_HomeProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTUS_Module_HomeProject.h; sourceTree = "<group>"; };
 		401084202954BBEA00D1EC5A /* OTUS_Module_HomeProject.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = OTUS_Module_HomeProject.docc; sourceTree = "<group>"; };
+		4077A2582954C59400ED4967 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6BE78BA781B652E9AE14263C /* Pods-OTUS_Module_HomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTUS_Module_HomeProject.release.xcconfig"; path = "Target Support Files/Pods-OTUS_Module_HomeProject/Pods-OTUS_Module_HomeProject.release.xcconfig"; sourceTree = "<group>"; };
+		D318A5B335E56B36802F88D1 /* Pods_OTUS_Module_HomeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTUS_Module_HomeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1091D325870193BD86C264AF /* Pods_OTUS_Module_HomeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +40,8 @@
 			children = (
 				4010841E2954BBEA00D1EC5A /* OTUS_Module_HomeProject */,
 				4010841D2954BBEA00D1EC5A /* Products */,
+				92917720883EA99F5C343867 /* Pods */,
+				7A5C9230A0C5324F9A248717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,8 +58,26 @@
 			children = (
 				4010841F2954BBEA00D1EC5A /* OTUS_Module_HomeProject.h */,
 				401084202954BBEA00D1EC5A /* OTUS_Module_HomeProject.docc */,
+				4077A2582954C59400ED4967 /* MainViewController.swift */,
 			);
 			path = OTUS_Module_HomeProject;
+			sourceTree = "<group>";
+		};
+		7A5C9230A0C5324F9A248717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D318A5B335E56B36802F88D1 /* Pods_OTUS_Module_HomeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92917720883EA99F5C343867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3612FFC25CDD631E236D3BB0 /* Pods-OTUS_Module_HomeProject.debug.xcconfig */,
+				6BE78BA781B652E9AE14263C /* Pods-OTUS_Module_HomeProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 401084252954BBEA00D1EC5A /* Build configuration list for PBXNativeTarget "OTUS_Module_HomeProject" */;
 			buildPhases = (
+				34ABAA0F5D40E1B1CE7FA736 /* [CP] Check Pods Manifest.lock */,
 				401084172954BBEA00D1EC5A /* Headers */,
 				401084182954BBEA00D1EC5A /* Sources */,
 				401084192954BBEA00D1EC5A /* Frameworks */,
@@ -127,12 +155,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34ABAA0F5D40E1B1CE7FA736 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTUS_Module_HomeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		401084182954BBEA00D1EC5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				401084212954BBEA00D1EC5A /* OTUS_Module_HomeProject.docc in Sources */,
+				4077A2592954C59400ED4967 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +315,7 @@
 		};
 		401084262954BBEA00D1EC5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3612FFC25CDD631E236D3BB0 /* Pods-OTUS_Module_HomeProject.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -293,6 +348,7 @@
 		};
 		401084272954BBEA00D1EC5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE78BA781B652E9AE14263C /* Pods-OTUS_Module_HomeProject.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
